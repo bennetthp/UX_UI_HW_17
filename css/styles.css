@@ -1,0 +1,68 @@
+body {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.inline-block {
+    display: inline-block;
+    vertical-align: top;    
+}
+.logo {
+  width: 25%;
+  padding: 1%;
+  
+}
+   
+
+
+.heroImg {
+    height: 300px;
+    padding: 25px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+   
+}
+.content {
+    width: 500px;
+    margin: 10px;
+    
+}
+
+.flexContainer {
+        display: flex;
+        background-color: olivedrab;
+        padding: 15px;
+        font-size: large;
+        color: whitesmoke;
+     }
+     .containerGrid2 {
+        display: grid;
+        grid-template-columns: 30% 50% 20%;
+        grid-template-rows: 1fr 1fr 1fr;
+        column-gap: 10px;
+        grid-template-areas: 
+            "topRow topRow topRow"
+            "sidebar content content"
+            "footer footer footer";
+    }
+    .topRow {
+        grid-area: topRow;
+        background-color: olivedrab;
+        padding: 20px;
+    }
+    .sidebar {
+        grid-area: sidebar;
+        background-color: yellowgreen;
+        padding: 20px;
+    }
+    
+    .content {
+        grid-area: content;
+        padding: 20px;
+    }
+    .footer {
+        grid-area: footer;
+        background-color:olivedrab;
+        color: whitesmoke;
+        max-height: 80px;
+    }
